@@ -20,11 +20,11 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact-section'style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
+    <div id="contact-section" className="contact-container">
       <h2>CONTACT</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aliquid.</p>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
             type="text"
@@ -35,7 +35,7 @@ const Contact = () => {
             required
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="email">Email:</label>
           <input
             type="email"
@@ -46,7 +46,7 @@ const Contact = () => {
             required
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="phone">Phone Number:</label>
           <input
             type="tel"
@@ -57,7 +57,7 @@ const Contact = () => {
             required
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="message">Message:</label>
           <textarea
             id="message"
@@ -67,7 +67,7 @@ const Contact = () => {
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit-btn">Submit</button>
       </form>
     </div>
   );
